@@ -41,4 +41,20 @@ Node.js + Prisma + MongoDB
    git clone https://github.com/guilhermelins11/api-at
    cd api-at
    code .
-  
+2. **Instale as dependências**
+   ```bash
+   npm install
+3. **Configure as variáveis de ambiente:**
+   ```bash
+   Crie um arquivo .env:
+   DATABASE_URL="mongodb+srv://<usuario>:<senha>@<cluster>/<database>?retryWrites=true&w=majority"
+4. **Gere o client do Prisma:**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+5. **Execute o servidor:**
+   ```bash
+   node server.js
+   OU
+   npm run dev
+
